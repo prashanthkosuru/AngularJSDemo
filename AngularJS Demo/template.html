@@ -1,0 +1,14 @@
+<!doctype html>
+<html ng-app="myApp"><!--Map to Module in js-->
+<body>
+    <div ng-controller="AdditionController">
+        Value A: <input type="number" ng-model="valueA"/><br/><!--link to scope values-->
+        Value B: <input type="number" ng-model="valueB" /><br />
+        Expression Value: {{valueA + valueB}}<br/>
+        <input type="button" ng-click="addValues(valueA,valueB)" value="add"/><br/>
+        Clicked Value: {{valueC}}<br/>
+    </div>
+	<script src="http://code.angularjs.org/1.2.9/angular.min.js"></script><!--load angularjs library-->
+	<script src="./js/myApp.js"></script><!--load js modules-->
+</body>
+</html>
